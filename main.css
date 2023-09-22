@@ -217,4 +217,15 @@ img {
   .title h1 {
     font-size: 35px!important;
   }
+
+  .title {
+        z-index: 9999 !important;
+        position: absolute;
+        left: 50%;
+        top: 48%!IMPORTANT;
+        transform: translateX(-50%) translateY(-50%);
+        font-family: "Montserrat";
+        text-align: center;
+        width: 100%;
+  }
 }
