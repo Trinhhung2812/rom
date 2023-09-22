@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Love You</title>
-  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="main.css">
+  <meta charset="utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="0; URL=index.html" /> -->
+
 </head>
 
 <body>
-
-  <div id="drag-container">
-    <div id="spin-container">
-      <img src="./img/1.jpg" alt="">
-      <img src="./img/2.jpg" alt="">
-      <img src="./img/3.jpg" alt="">
-      <img src="./img/4.jpg" alt="">
-      <img src="./img/5.jpg" alt="">
-      <img src="./img/6.jpg" alt="">
-      <img src="./img/7.jpg" alt="">
-      <img src="./img/8.jpg" alt="">
-
-      <p>My Love</p>
-
-
+  <!-- <audio autoplay="autopaly">
+      <source src="renxi.mp3" type="audio/mp3" />
+    </audio> -->
+  <!-- 星空html -->
+  <!-- <div> -->
+  <div class="container2">
+    <div class="content">
+      <canvas id="universe"></canvas>
     </div>
-    <div id="ground"></div>
+  </div>
+  <!-- </div> -->
+  <div class="title">
+    <!-- EDIT HERE -->
+    <h3 class="STARDUST1">2023</h3>
+    <h1 class="STARDUST2">You're so cute</h1>
+    <h5 class="STARDUST3" style="color:bisque">Gửi em chút lạc quan, không chờ ngày lấy lại.<br>
+      Dù ngày mai ngang trái, mong em ít thở dài.. <strong>❤️</strong> </h5>
+    <img class="img" src="image.jpg" alt="JUNO_OKYO" />
+    <canvas id="pinkboard"></canvas>
+  </div>
+  <div class="mp3">
+    <video autoplay="autoplay" loop="loop" muted="false" controls="controls" id="video" oncanplay="this.muted=false">
+      <source src="I_do.mp3">
+    </video>
   </div>
 
-  <div id="music-container"></div>
-  <div id="canva">
-    <canvas id="canvas"></canvas>
-  </div>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="main.js"></script>
+  <script src="particle.js"></script>
+  <script src="universe.js"></script>
 </body>
 
 </html>
-<script>
-  addEventListener('load', (event) => {
-    document.getElementById("myAudio")
-  });
-</script>
